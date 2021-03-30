@@ -1,0 +1,32 @@
+﻿/******************************************************
+**
+**                 SOCIALPIC CSS
+** 
+** Styles for the socialpic jquery plugin
+**
+** Author: Andrew Hartnett
+**   Date: November 2014
+**
+******************************************************/
+
+a.socialclick:hover{
+	cursor: pointer;
+}
+
+
+.api-detail_caption ul{
+	width:100%;
+	border-top:1px #666 solid;
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+.api-detail_caption ul li{
+	display: inline;
+	margin: 0 10px;
+}
+
+.api-detail_caption ul li a:hover{
+	color:#666
+}
+

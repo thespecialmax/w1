@@ -1,0 +1,55 @@
+﻿#header {width:220px;padding:10px 0 0 0; position:fixed; height:100%; z-index:996; background-color:black}
+#menu-button				{margin-left:20px !important;}
+
+/* -------------------------------------------BRAND--------------------------------------------- */
+
+ul#brand								{padding:0; margin:0 auto; list-style:none; position:fixed; bottom:50px;left:73px}
+ul#brand li							{float:left; margin-right:20px}
+ul#brand li a:hover					{color:#666;}
+
+/* ------------------------ RESET ------------------------ */
+
+ul#menu {position: relative;z-index: 397;width:180px; }
+
+ul#menu,
+ul#menu li,
+ul#menu ul  { list-style:none; margin:0; padding:0;border: 0;}
+
+/* ------------------------ MENU ------------------------ */
+
+ul#menu > li {margin:4px 0 0 0;position: relative; text-align:right;}
+
+ul#menu > li a { display:block; padding:10px 22px 10px 10px; text-decoration:none;cursor: pointer;}
+ul#menu > li a span.menu_desc {text-align:right; text-transform:lowercase; display:block; font-size:12px; font-style:italic; color:#999}
+
+ul#menu > li a span.menu_arrow {width:12px; height:12px; display:block; float:left; background:transparent url('../images/arrow_right_1.png') no-repeat scroll center top }
+
+ul#menu > li:hover a,
+ul#menu > li.active a {color:#666;}
+
+ul#menu > li:hover a span.menu_arrow,
+ul#menu > li.active span.menu_arrow { background-position:center -12px}
+
+/* ------------------------ SOUS MENU ------------------------ */
+ul#menu ul {position: absolute;z-index:1009}
+
+
+ul#menu li ul { display:none;top:4px; left: 100%; width:180px;}
+
+ul#menu li:hover > ul {display:block;-moz-animation: fadeIn .3s ease-in;-webkit-animation: fadeIn .3s ease-in ;animation:fadeIn .3s ease-in ;}
+
+ul#menu ul li {margin-left:-4px;}
+
+ul#menu ul li {background-color:#333; border-bottom:1px #282828 solid; border-top:1px #444444 solid; text-align:right;}
+ul#menu ul li:first-child {border-top:none}
+
+ul#menu ul li a { display:block; height:30px; padding:10px; font-size:14px; text-decoration:none;color:#d5d5d5; text-transform:inherit}
+ul#menu ul li a span.menu_desc {text-align:right; display:block; font-size:12px; font-style:italic; color:#999}
+
+ul#menu ul li a span.has-sub {width:12px; height:12px; display:block; float:left; background:transparent url('../images/arrow_right_1.png') no-repeat scroll center top }
+ul#menu ul li:hover,
+ul#menu ul li.active {background-color:#2e2e2e;position: relative;}
+ul#menu ul li:hover a,
+ul#menu ul li.active a {color:#797979;}
+
+

@@ -1,0 +1,146 @@
+﻿/* ------------------------ FONTS ------------------------ */
+
+@font-face {
+    font-family: 'blutterregular';
+    src: url('../fonts/blutter-webfont.eot');
+    src: url('../fonts/blutter-webfont.eot#iefix') format('embedded-opentype'),
+         url('../fonts/blutter-webfont.woff2') format('woff2'),
+         url('../fonts/blutter-webfont.woff') format('woff'),
+         url('../fonts/blutter-webfont.ttf') format('truetype'),
+         url('../fonts/blutter-webfont.svg#blutterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-face					{font-family:blutterregular}
+
+html 						{height: 100%;}
+body 						{height: 100%;margin: 0;padding: 0;color:#fff}
+
+
+/* ------------------------ TO SMALL ------------------------ */
+#toosmall 					{display:none; color:#fff; text-align:center; padding:20px;box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box}
+
+
+/* ------------------------ GENERAL ------------------------ */
+
+a 								{color:#fff; text-decoration:none;outline-style:none}
+a:hover 						{color:#fff; text-decoration:underline}
+
+
+#wrapper 					{position:fixed; width: 100%;height: 100%;}
+
+#border-top,
+#border-right,
+#border-bottom,
+#border-left				{background-color:#fff; z-index:997}
+
+#border-top					{position:fixed; top:0; width:100%; height:22px}
+#border-right				{position:fixed; right:0; width:22px; height:100%}
+#border-bottom				{position:fixed; bottom:0; width:100%; height:22px}
+#border-left				{position:fixed; left:0; width:22px; height:100%}
+
+#wrapper_enter, 			
+#wrapper_intro,
+#wrapper_maintenance		{position:absolute; width: 100%;min-height: 100%;height: auto !important;height: 100%; overflow:hidden;}
+#wrapper_enter				{position:fixed}
+h1							{font-size:16px}
+h2							{font-size:14px}
+h3							{font-size:12px}
+h2 a							{font-size:12px}
+
+
+h1.font-face				{font-size:14px; padding-top:5px;}
+h2.font-face				{font-size:12px; padding-top:5px;}
+h3.font-face				{font-size:12px}
+
+.menu .font-face				{font-size:12px}
+.arrow_back					{position:fixed; top:140px; left:260px}
+
+#tooobe						{ position:fixed; left:-6px; z-index:10000; top:50%; font-size:10px; color:#fff !important; -webkit-transform: rotate(270deg);-moz-transform: rotate(270deg);-o-transform: rotate(270deg);writing-mode: lr-tb;}
+.header_spacer				{ height:110px}
+
+/* -------------------------------------------POPUP--------------------------------------------- */
+
+#fade 						{position: fixed; left: 0; top: 0;width: 100%; height: 100%; z-index:999}
+#loading					{width:41px; height:39px;position:fixed;top:50%;left:50%;margin-left:-20px; margin-top:-20px; background:transparent url('../images/indicator.gif') no-repeat scroll center center;z-index:999}
+#popup_content				{width:960px;overflow:hidden;position:fixed;top:50%;left:50%; margin-left:-480px; margin-top:-225px; z-index: 99998; border:1px #fff solid;;-webkit-box-shadow:  0px 0px 20px 0px rgba(0, 0, 0, 0.7);box-shadow:  0px 0px 20px 0px rgba(0, 0, 0, 0.7);}
+.popup_header				{ height:30px; color:#000}
+.popup_header .text_close	{ padding:5px; float:right; color:#000}
+.popup_header .cross_close 	{height:30px; width:30px; display:block; float:right; color:#fff; text-decoration:none;background:transparent url('../images/close_popup.png') no-repeat scroll left center}
+
+.popup_body img				{width:100%}
+
+/* -------------------------------------------POPUP--------------------------------------------- */
+
+.popup_newsletter 		{width:300px;overflow:hidden;padding:6px;color:#000;position:fixed;bottom:60px;left:50%; margin-left:-160px;z-index: 99998; background-color:#fff; border:4px #000 solid;}
+.popup_newsletter h1		{color:#000; margin:0 0 10px 0}
+.form_newsletter		{vertical-align: bottom;-webkit-appearance: none;-moz-appearance: none;appearance: none;-webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;border:1px #000 solid;background-color:#fff;width:70%;color:#000;font-size:14px;outline:none;padding:4px 6px; height:18px}
+
+.submit_newsletter 							{-webkit-appearance: none;-moz-appearance: none;appearance: none;-webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;background-color:#fff;border:1px #000 solid;outline: none;cursor: pointer;text-align: center;text-decoration: none;font: 14px;padding:4px 6px; height:28px;}
+.submit_newsletter:hover 					{text-decoration: none; background-color:#000; color:#fff}
+.submit_newsletter:active 					{position: relative;top: 1px;}
+#close_newletter				{float:right; color:#000;margin-top:2px}
+	
+/* -------------------------------------------INTRO--------------------------------------------- */
+
+
+.intro						{width: 100%; height: 100%; overflow: hidden;}
+
+.logo_enter					{width:400px; min-height:400px; position:absolute;}
+.logo_enter .logo			{width:300px; height:300px; background:url('../images/a-galerie_logo_white.png') no-repeat scroll center center; margin-left:50px;  background-size:auto 100%; display:block}
+.desc_enter					{text-align:center; overflow:hidden; margin:20px auto;text-shadow: 1px 1px 2px rgba(0, 0, 2, 1); padding:5px;}
+
+
+
+
+/* ------------------------ LANG ------------------------ */
+
+
+#menu_lang 					{margin:0 20px 0 0;padding:0;left:55px; bottom:0; position:fixed; overflow:hidden; z-index:99999}
+#menu_lang ul#lang			 {margin:0; padding:0}
+#menu_lang ul#lang li 			{float:left;list-style:none; margin:0 0 0 1px; padding:0}
+#menu_lang ul#lang li a			 {text-align:center;text-decoration:none;font-size: 12px;color:#666; padding:0; margin:0; width:20px; height:20px; line-height:20px; display:block}
+#menu_lang ul#lang li a:hover, 
+#menu_lang ul#lang li a.selected {color:#fff; background-color:#000}
+
+#enter_lang 							{position:fixed;z-index:998; bottom:0px; margin:0 auto; left:0; right:0}
+#enter_lang ul#lang 					{margin:0; padding:0;list-style:none;text-align:center;}
+#enter_lang ul#lang li 				{display:inline-block; *display:inline; /*IE7*/ *zoom:1; /*IE7*/ margin:0 0 0 1px;padding:0px; background-color:#000}
+#enter_lang ul#lang li a 				{text-align:center;text-decoration:none;font-size: 12px;color:#fff; padding:0; margin:0; width:20px; height:20px; line-height:20px; display:block}
+#enter_lang ul#lang li a:hover 		{color:#000; background-color:#fff}
+
+
+.caption_texte {position:absolute; top:30px; padding:10px; color:#907349; overflow:hidden; background-color:#bfa572; z-index:1001; box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7)}
+
+.fildariane	{margin:0;padding:0;left:20px; top:0; height:20px; line-height:20px; position:fixed;float:left; color:#000; z-index:10000}
+.fildariane div	{float:left}
+.fildariane a	{color:#000;}
+
+
+/* ------------------------ HEADER ------------------------ */
+
+
+#top						{ display:none;position:fixed; top:0; width:100%; height:50px; background-color:#fff; z-index:1006}
+#top_title					{color:#000; margin-top:12px}
+#logo						{margin:0; padding:0; width:220px; height:150px; overflow:hidden;}
+#logo a						{display:block; width:100px; height:100px;margin:40px 0 0 80px; background:url('../images/a-galerie_logo_white_small.png') no-repeat scroll right top;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;}
+
+.logo						{height:230px !important; padding:0 !important}
+.logo > a					{background-position:center center !important;height:230px !important;}
+.logo_small					{display:block; height:50px; margin-left:50px; padding:20px 0 0 60px; color:#000; font-size:18px; background:transparent url('../images/logo_small.png') no-repeat scroll left top;}
+
+/* ------------------------ MAP ------------------------ */
+
+.title_map			{ font-size:16px; color:#000 !important; text-decoration:none}
+.title_map span,	
+.title_map em		{width:100%; height:30px; display:block; color:#000 !important}
+
+/* ------------------------ FOOTER ------------------------ */
+
+#footer						{ position:fixed; top:0; right:22px; overflow:hidden; height:100%; width:10px; z-index:1003;}
+#scrollup 					{width:36px;height:36px;text-indent:-9999px; z-index:1004; position:fixed;bottom:32px;right:32px;display:none;background:transparent url('../images/totop.png') no-repeat scroll left top;}
+#scrollup:hover 			{background-position:left -36px}
+
+

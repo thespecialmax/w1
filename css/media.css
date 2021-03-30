@@ -1,0 +1,221 @@
+﻿/* #Restore
+================================================== */
+
+    @media only screen and (min-width: 1024px)  {
+    
+    	body					{overflow:inherit !important}
+		#top, 				
+		#header,					
+		#body					{left:0 !important}	
+
+		
+	}
+	
+
+
+  
+/* #Tablet (Portrait)
+================================================== */
+
+    @media only screen and (min-width: 768px) and (max-width: 980px) {
+	
+		
+		.logo_enter					{width:300px;}
+		.logo_enter .logo			{width:250px; height:250px; background:url('../images/a-galerie_logo_white.png') no-repeat scroll center center; margin-left:25px;  background-size:100%; display:block}
+
+		
+		.logo_maintenance			{width:240px; margin:0 auto;}
+		.api-container				{margin:0 auto; float:inherit}
+    
+		#popup_content				{width:760px;margin-left:-380px; margin-top:-178px;}
+	
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+		.logo_enter					{width:300px;}
+		.logo_enter .logo			{width:250px; height:250px; background:url('../images/a-galerie_logo_white.png') no-repeat scroll center center; margin-left:25px;  background-size:100%; display:block}
+
+
+		.logo_maintenance			{width:200px; margin:0 auto;}
+		.api-container,
+		.api-container2,
+		.api-container_centered			{width:460px; margin:0 auto; float:inherit}
+		
+		.api-gallery .api-thumb a 		{width:130px;height:130px;}
+		.api-gallery .api-legend 		{width:130px; font-size:11px}
+
+		
+		.pos_right,
+		.pos_left		 			{width:100%; float:inherit; margin:0 0 10px 0 !important;}
+
+		ul.wall li 					{width:50%;padding-bottom:50%;line-height:50%;}
+
+		#border-right,				
+		#border-left				{width:10px;}
+		#tooobe						{left:-28px}
+		#menu-button				{margin-left:10px !important;}
+
+		#popup_content				{width:460px;margin-left:-230px; margin-top:-108px;}
+
+	}
+	
+
+/* #Mobile (Portrait)
+================================================== */
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+
+		.logo_enter					{width:200px;}
+		.logo_enter .logo			{width:150px; height:150px; background:url('../images/a-galerie_logo_white.png') no-repeat scroll center center; margin-left:25px;  background-size:100%; display:block}
+
+
+		.logo_maintenance			{width:160px; margin:0 auto;}
+		.api-container,
+		.api-container2,
+		.api-container_centered			{width:300px; margin:0 auto;float:inherit}
+		
+		.api-gallery .api-thumb a 		{width:124px;height:124px;}
+		.api-gallery .api-legend 		{width:132px; font-size:11px}
+		
+		.pos_right,
+		.pos_left		 			{width:100%; float:inherit; margin:0 0 10px 0 !important}
+
+		ul.wall li 					{width:50%;padding-bottom:50%;line-height:50%;}
+		
+		#border-right,				
+		#border-left				{width:10px;}
+		#menu-button				{margin-left:10px !important;}
+		#tooobe						{left:-28px}
+		
+
+		#footer						{right:6px;}
+		
+		#popup_content				{width:100%;margin-left:0; margin-top:0; left:inherit; top:inherit}
+
+
+
+
+	}
+
+
+/* #Mobile (5)
+================================================== */
+
+    @media only screen and (min-width: 320px) and (max-width: 360px) {
+
+
+
+		.popup_newsletter 		{width:300px;bottom:50px;margin-left:-156px;}
+
+
+
+	}	
+/* SWITCH STYLE FOR MOBILE/TABLETT
+================================================== */
+
+    @media only screen and (min-width: 320px) and (max-width: 1023px) {
+    
+	
+	#body						{margin:0;padding:70px 10px 0 10px; -webkit-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.75);box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.75)}
+	
+	.api-container,
+	.api-container2,
+	.api-container_centered			{margin:0 auto; float:inherit;}
+	
+	.api-detail_container 			{max-width:100%}
+	.api-detail_container img		{width:100%}
+
+		
+	#top						{display:block;margin-top:20px}
+
+	.header_spacer				{ height:inherit}
+
+	/* ------------------------ EXHIBITIONS ------------------------ */
+	
+
+	.bxslider_spacer		{height:inherit;}
+	.bxslider_control span a { top:25px}
+	
+	/* ------------------------ GALLERY ------------------------ */
+	
+	.arrow_back	{ left:inherit; right:30px; top:70px;}
+
+	/* ------------------------ MENU ------------------------ */
+	
+	#logo						{border-bottom:1px #bbb solid}
+	#logo a						{margin-top:20px; margin-right:0px;}
+	
+	#menu-button				{width:20px; height:20px; background:url('../images/megamenu.png') no-repeat scroll left top; margin:15px; float:left; margin-left:32px; display:block}
+	#header 					{margin:0; height:100%; overflow:hidden; top:0; left:-220px;z-index:1001;background-color:#ccc;}
+	.menu 						{width:100%; overflow-y:scroll;}
+	
+	ul#menu 					{position: relative;z-index: 397;width:100%; }
+	
+	
+	.menu::-webkit-scrollbar 	{display: none}
+	
+	ul#menu > li 				{border-bottom:1px #bbb solid; border-top:1px #ddd solid;margin-top:inherit}
+	ul#menu > li a 				{padding:10px 62px 10px 10px;}
+
+	
+
+	ul#menu > li.open a span.menu_desc {color:#333;}
+	ul#menu > li.open a span.menu_arrow { background-position:center -12px}
+
+	
+	ul#menu ul 					{position: relative;}
+	ul#menu li ul 				{top:inherit; left:inherit;width:100%;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+	ul#menu li:hover > ul 		{display:none;-moz-animation:none;-webkit-animation:none;animation:none;}
+	ul#menu ul li 				{margin-left:inherit;}
+	ul#menu ul li 				{text-align:left;}
+
+		#popup_content				{width:100%;margin-left:0; margin-top:0; left:inherit; top:inherit}
+
+	
+
+    }
+   
+
+
+
+
+
+/*  too small
+================================================== */
+
+    /* Note: Design for a width < 320px */
+    @media only screen and (max-width: 319px) {
+	
+	body						{overflow:hidden}
+	
+	#wrapper,					
+	#top,					
+	#footer,						
+	#toggle,						
+	#header,
+	#supersized,
+	#border-right,				
+	#border-left,
+	#border-top,				
+	#border-bottom,
+	ul#lang						{display:none !important}
+	#tooobe						{left:-26px;}
+
+	
+	
+	.api-container_centered,
+	.api-container,
+	.api-container2	{display:none !important}
+	
+	#toosmall					{display:block}
+    }
+    
+
+    
+    

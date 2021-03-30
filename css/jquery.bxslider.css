@@ -1,0 +1,186 @@
+﻿/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+.bxslider_legend	{ height:150px;}
+.bxslider_title { font-size:14px; font-weight:normal; margin-top:5px}
+.bxslider_title  a { font-size:14px; font-weight:normal; margin-top:5px; text-decoration:none}
+
+.bxslider_stitle { font-size:14px; font-weight:normal; margin-top:5px}
+.bxslider_sstitle { font-size:14px; font-weight:normal; margin-top:5px}
+.bxslider_links {margin:10px auto 30px auto}
+.bxslider_links a { font-size:12px; background-color:#ccc; color:#000; padding:0 10px;}
+.bxslider_links a:hover {background-color:#000; color:#fff; text-decoration:none}
+.bxslider_spacer		{height:10px; text-align:center;}
+.bxslider_current { height:60px; margin:0 auto;  background:url('../images/current.png') no-repeat scroll center bottom; text-align:center}
+.bxslider_nocurrent { height:60px; margin:0 auto;}
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 10px;
+	padding:0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	margin:0 auto 10px auto;
+	border:16px #fff solid;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	
+	text-align:center;
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+		
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	display:none
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../images/loading_black.gif) center center no-repeat #000;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bxslider_control span a {
+	position: absolute;
+	top: 36px;
+	outline: 0;
+	width: 50px;
+	height: 40px;
+	line-height:40px;
+	display:block;
+	z-index: 1;
+	background-color:aqua;
+	text-decoration:none
+}
+
+.bxslider_control span#slider-prev a {
+	left: 0px;
+	background:url(../images/controls_left.png) no-repeat 0px 0;
+	text-align:right;
+	padding-left:30px
+}
+
+.bxslider_control span#slider-next a {
+	right: 0px;
+	background: url(../images/controls_right.png) no-repeat 100% 0;
+	text-align:left;
+	padding-right:30px
+}
+
+.bxslider_control span:hover#slider-prev a {
+	background-position: 0 -40px;
+}
+
+.bxslider_control span:hover#slider-next a {
+	background-position: 100% -40px;
+}
+
+.bxslider_control span a:hover {
+	color:#666;
+}
+
+
+
+.bxslider_control span a.disabled {
+	color:#666
+}
+
+
+.bxslider_control span#slider-prev .disabled {
+	background-position: 0 -40px;
+}
+
+.bxslider_control span#slider-next .disabled {
+	background-position: 100% -40px;
+}
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+
+.bx-wrapper .bx-prev {
+	left: 0px;
+	background:url(../images/controls_left.png) no-repeat 0 0;
+	text-align:right;
+}
+
+.bx-wrapper .bx-next {
+	right: 0px;
+	background: url(../images/controls_right.png) no-repeat 100% 0;
+	text-align:left
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 -40px;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: 100% -40px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: -50px;
+	outline: 0;
+	width: 50px;
+	height: 40px;
+	line-height:40px;
+	display:block;
+	z-index: 1;
+	text-decoration:none;
+}
+
+.bx-wrapper .bx-controls-direction a:hover {
+	color:#666
+}
+
+
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	color:#666
+}
+
+
+.bx-wrapper .bx-controls-direction  .bx-prev.disabled {
+	background-position: 0 -40px;
+}
+
+.bx-wrapper .bx-controls-direction  .bx-next.disabled {
+	background-position: 100% -40px;
+}
